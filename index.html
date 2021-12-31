@@ -1,0 +1,157 @@
+<!--Developed by ChristianSwift. All right reserved.-->
+<html style="background: rgba(0, 0, 0, 0) url(&quot;assets/bg.png&quot;) repeat scroll 0% 0%; --darkreader-inline-bgcolor: rgba(0, 0, 0, 0);" data-darkreader-mode="dynamic" data-darkreader-scheme="dark" data-darkreader-inline-bgcolor=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style>
+
+   </head>
+   <body class=" stop-scrolling">
+
+    <audio autoplay="autoplay" id="music">
+
+        <source src="StartPage_files/1.mp3" type="audio/mpeg">
+
+    </audio>
+
+
+    <!--jQuery-->
+    <script src="StartPage_files/jquery-2.js"></script>
+
+    <!--SweetAlert Files-->
+    <!-- <script src="StartPage_files/sweetalert.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="StartPage_files/sweetalert.css"> -->
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <!--Star War Script CSS-->
+    <link rel="stylesheet" type="text/css" href="StartPage_files/starwar.css">
+    <style class="darkreader darkreader--sync" media="screen"></style>
+
+       <canvas id="Canvas" width="1200" height="800">  </canvas>
+         <script>
+            var c=document.getElementById("Canvas");
+            var ctx=c.getContext("2d");
+                c.width=window.innerWidth;
+                c.height=window.innerHeight;
+//              ctx.fillRect(0,0,100,100);
+//              a,b,c,d分别代表x方向偏移,y方向偏移,宽，高
+            var string1 = "ཀ་ཁ་ག་ང་ཅ་ཆ་ཇ་ཉ་ཏ་ཐ་ད་ན་པ་ཕ་བ་མ་ཙ་ཚ་ཛ་ཝ་ཞ་ཟ་འ་ཡ་ར་ལ་ཤ་ས་ཧ་ཨ་";
+                string1.split("");
+            var fontsize=30;
+                columns=c.width/fontsize;
+            var drop = [];
+                    for(var x=0;x<columns;x++)
+                    {
+                        drop[x]=0;
+                    }
+                function drap(){
+                    ctx.fillStyle="rgba(0,0,0,0.07)";
+                    ctx.fillRect(0,0,c.width,c.height);
+                    ctx.fillStyle="#0F0";
+                    ctx.font=fontsize+"px arial";
+                    for(var i=0;i<drop.length;i++){
+                        var text1=string1[Math.floor(Math.random()*string1.length)];
+                        ctx.fillText(text1,i*fontsize,drop[i]*fontsize);
+                        drop[i]++;
+                        if(drop[i]*fontsize>c.height&&Math.random()>0.9){//90%的几率掉落
+                            drop[i]=0;
+                        }
+                    }
+                }
+        setInterval(drap,20);
+
+        document.getElementById("music").play();
+        </script>
+
+
+    <center>
+      
+     
+
+    <!--Click to jump-->
+    <script>
+ 
+
+      
+          setTimeout(function() { 
+            window.location.href='./hell/Hello.html';
+
+        },30*1000) 
+
+        
+    </script>
+
+
+
+    <p id="start">ཚང་མ་བཀྲིས་བདེ་ལེགས་།,<br> མགོ་ཚུགས་…</p>
+
+    <!--title-->
+    <h1>ཚང་མ་བཀྲིས་བདེ་ལེགས་།<sub>མགོ་ཚུགས་…</sub></h1>
+
+
+    <div id="titles">
+        <div id="titlecontent">
+
+            <!--subtitle-->
+            <p class="center">འབོད་ གཏམ།<br> ཨོ་བདེ་ལེགས་སུ་གྱུར་ཅིག </p>
+
+            <!--article-->
+            <p style="text-indent : 1em">སྟོད་གངས་རི་ར་བས་བསྐོར་བའི་ཞིང་ཁམས་འདིར། 
+
+              ལྷ་ཨུ་རྒྱན་པད་མའི་ཆོས་ས་དང་། བློན་ཐོན་མི་ཡི་གེ་སྤེལ་ས། གླིང་གེ་སར་རྒྱལ་བོ་འཁྲུངས་ས་རེད།
+                རྒྱལ་བོ་སྲོང་བཙན་བཙན་ས་བཟུང་ས། 
+</p>
+
+            <p style="text-indent : 1em;">རི་མཐོ་པོ་ཇོ་མོ་གླང་མ།
+གསེར་སེར་པོ་མཆོད་རྟེན་འགྱིང་འགྱིང་།
+                ཆུ་དལ་འབབ་རྨའབྲི་སྔོན་མོ།
+                བཀྲ་ཤིས་པའི་གླུ་སྒྲ་ལྷང་ལྷང་།
+                རྒྱལ་རིང་ཁྲ་བོ་རྟ་ནོར་ལུག་གསུམ།
+                སྤང་མེ་ཏོག་དཀྱིད་དུ་མཛེས་ས།
+                གླིང་དཀར་པོའི་རྟ་རྒྱུགས་འགྲན་ས།
+                དཔོན་གེ་གསར་ཁྲི་ལམ་ལམ།
+</p>
+
+            <p style="text-indent : 1em">
+              ས་འདི་ས་ངོ་མ་ཤེས་ན།
+              ངེད་གདོང་དམར་བོད་པའི་གནས་མཆོག་རེད།
+                
+                བྱ་དེ་ཁྲུང་ཁྲུང་དཀར་མོ།གེ་སར་ལོ།
+
+གཤོག་བཙལ་ང་ལ་ཡོར་དང་།གེ་སར་ལོ།
+
+ཐག་རིང་རྒྱང་ལ་མི་འགྲོ།གེ་སར་ལོ།
+
+ལི་ཐང་བསྐོར་ནས་སླེབས་ཡོང་།གེ་སར་ཡ་འགྲོ་ལོ།
+
+</p>
+<p style="">
+  གཤམ་ལ་ཁང་ཆུང་ནང་དུ་འཛུལ་རྒྱུ་ཡིན་པས་
+  ཚང་མ་སེམས་ལྷོད་ལ་འབབ་
+  དངངས་འཚབ་མ་གནང།
+
+</p>
+<p style="text-align: center;">
+  5
+</p>
+<p style="text-align: center;">
+  4
+</p>
+<p style="text-align: center;">
+  3
+</p>
+<p style="text-align: center;">
+  2
+</p>
+<p style="text-align: center;">
+  1
+</p>
+<p style="text-align: center;">
+  0
+</p>
+ 
+
+        </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  </body></html>
